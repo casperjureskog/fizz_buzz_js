@@ -6,15 +6,13 @@ FIZZCalculator.prototype.fizz_buzz = function(obj) {
 
   if (player1 < 0) {
     obj.fizzMessage = "wrong input"
-  }
-  if (player1 > 18.5 && obj.bmiValue < 25) {
+  } else if (player1 % 15 === 0) {
     obj.fizzMessage = "fizzbuzz"
-  }
-  if (player1 > 25 && obj.bmiValue < 30) {
+  }else if (player1 % 5 === 0) {
     obj.fizzMessage = "Overweight"
-  }
-  if (player1 > 30) {
+  }else if (player1 % 3 === 0) {
     obj.fizzMessage = "Obese"
   }
+
 
 };

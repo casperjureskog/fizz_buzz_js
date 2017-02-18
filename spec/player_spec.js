@@ -2,16 +2,15 @@ describe("Player", function() {
   var subject;
 
   beforeEach(function() {
-    subject = new Player();
+    subject = new Player({player1: 150});
   });
 
   it("#test for user input", function() {
-    subject.myFirstFunction();
-    expect(subject.someAttribyte).toEqual('Yay!');
+    expect(subject.player1).toEqual(150);
   });
 
-  it("#mySecondFunction adds two numbers together", function() {
-
-    expect(subject.mySecondFunction(10, 5)).toEqual(15);
+  it("#test for calcylator functions", function() {
+    subject.calculate_fizz();
+    expect(subject.fizzMessage).toEqual("fizzbuzz");
   });
 });

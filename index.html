@@ -8,7 +8,7 @@
 </noscript>
     <title></title>
     <script src="assets/js/player.js"></script>
-    <script src="assets/js/fizz_alculator.js"></script>
+    <script src="assets/js/fizz_calulator.js"></script>
     <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
     <script type="text/javascript">
 
@@ -17,12 +17,12 @@
       $('#calculate').click(function () {
       var p = parseFloat($('#player1').val());
 debugger;
-       var person = new Person({player1: p});
-      person.calculate_bmi();
+       var player = new Player({player1: p});
+      player.calculate_fizz();
         //  $("form")[0].reset();
         //  $("#foot1").hide();
         //  $('#display_value').html('Your BMI is ' + person.bmiValue);
-         $('#display_message').html('and you are '+ person.fizzMessage);
+         $('#display_message').html('and you are '+ player.fizzMessage);
 
     });
   });

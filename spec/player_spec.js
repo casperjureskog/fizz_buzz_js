@@ -11,6 +11,6 @@ describe("Player", function() {
 
   it("#test for calcylator functions", function() {
     subject.calculate_fizz();
-    expect(subject.fizzMessage).toEqual("fizzbuzz");
+    expect(subject.fizzMessage).toEqual("FizzBuzz");
   });
 });

@@ -1,6 +1,6 @@
 describe('Fizz_spec - index.html', function() {
     beforeEach(function() {
-        jasmine.getFixtures().fixturesPath = 'base';
+        jasmine.getFixtures().fixturesPath = '.';
         loadFixtures('index.html');
         $.holdReady(false);
         $('#player1').val('5');

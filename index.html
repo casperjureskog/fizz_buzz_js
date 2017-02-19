@@ -1,37 +1,59 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <noscript>
-    <meta http-equiv="refresh" content="0; URL=http://example.com/noscript.html"/>
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<link rel="stylesheet" href="style.css">
+<noscript>
+  <meta http-equiv="refresh" content="0; URL=http://example.com/noscript.html"/>
 </noscript>
-    <title></title>
-    <script src="assets/js/player.js"></script>
-    <script src="assets/js/fizz_calulator.js"></script>
-    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
-    <script type="text/javascript">
-
-       $(document).ready(function () {
-      $('#calculate').click(function () {
-        var p = parseFloat($('#player1').val());
-        var player = new Player({player1: p});
-      player.calculate_fizz();
-      $('#display_message').html('You got '+ player.fizzMessage);
-
-    });
+<title></title>
+<script src="assets/js/player.js"></script>
+<script src="assets/js/fizz_calulator.js"></script>
+<script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+  $('#calculate').click(function () {
+    var p = parseFloat($('#player1').val());
+    var player = new Player({player1: p});
+  player.calculate_fizz();
+  $('#display_message').html('You got '+ player.fizzMessage);
   });
+});
 </script>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
   </head>
+
   <body>
-    <form>
-      <input  type="text" id="player1" placeholder="Your number">&nbsp;
+    <div class="row">
+      <div class="large-3 columns">&nbsp;
+
+
+      </div>
+
+      <div class="falt large-6 columns">
+        <img src="img/fizz_logo.jpg">
         <br><br>
-      <input type="button" id="calculate" value="Calculate">
-    </form>
-    <div>
-    
-     <span id="display_message"></span>
-   </div>
+        <form>
+          <input  type="text" id="player1" placeholder="Your number">&nbsp;
+            <br><br>
+          <input type="button" id="calculate" value="Calculate">
+        </form>
+
+
+         <span id="display_message"></span>
+        </div>
+        <div class="large-3 columns">&nbsp;
+        </div>
+
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
   </body>
 </html>

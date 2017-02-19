@@ -13,16 +13,11 @@
     <script type="text/javascript">
 
        $(document).ready(function () {
-
       $('#calculate').click(function () {
-      var p = parseFloat($('#player1').val());
-debugger;
-       var player = new Player({player1: p});
+        var p = parseFloat($('#player1').val());
+        var player = new Player({player1: p});
       player.calculate_fizz();
-        //  $("form")[0].reset();
-        //  $("#foot1").hide();
-        //  $('#display_value').html('Your BMI is ' + person.bmiValue);
-         $('#display_message').html('and you are '+ player.fizzMessage);
+      $('#display_message').html('You got '+ player.fizzMessage);
 
     });
   });
@@ -35,7 +30,7 @@ debugger;
       <input type="button" id="calculate" value="Calculate">
     </form>
     <div>
-     <!-- <span id="display_value"></span> -->
+    
      <span id="display_message"></span>
    </div>
   </body>

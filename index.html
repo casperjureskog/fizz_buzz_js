@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <noscript>
+    <meta http-equiv="refresh" content="0; URL=http://example.com/noscript.html"/>
+</noscript>
+    <title></title>
+    <script src="assets/js/player.js"></script>
+    <script src="assets/js/fizz_alculator.js"></script>
+    <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
+    <script type="text/javascript">
+
+       $(document).ready(function () {
+
+      $('#calculate').click(function () {
+      var p = parseFloat($('#player1').val());
+debugger;
+       var person = new Person({player1: p});
+      person.calculate_bmi();
+        //  $("form")[0].reset();
+        //  $("#foot1").hide();
+        //  $('#display_value').html('Your BMI is ' + person.bmiValue);
+         $('#display_message').html('and you are '+ person.fizzMessage);
+
+    });
+  });
+</script>
+  </head>
+  <body>
+    <form>
+      <input  type="text" id="player1" placeholder="Your number">&nbsp;
+        <br><br>
+      <input type="button" id="calculate" value="Calculate">
+    </form>
+    <div>
+     <!-- <span id="display_value"></span> -->
+     <span id="display_message"></span>
+   </div>
+  </body>
+</html>

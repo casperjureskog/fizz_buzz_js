@@ -3,6 +3,9 @@ background: #f7f7f7;
 
 }
 
+h4 {
+   color: #fff;
+}
 
 div {
   /*background: #000000;*/
@@ -13,8 +16,12 @@ span {
 }
 
 .falt {
-  height: 380px;
+  height: 420px;
   background: #000000;
+  color: #fff;
+  
+  font-family: 'verdana', sans-serif;
+  font-size: 20px;
 }
 
 input[type=text], select {

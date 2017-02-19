@@ -7,6 +7,7 @@ FIZZCalculator.prototype.fizz_buzz = function(obj) {
   if (player1 <= 0) {
     obj.fizzMessage = "wrong input"
   } else if (player1 % 15 === 0) {
+    obj.level = player1
     obj.fizzMessage = "FizzBuzz"
   }else if (player1 % 5 === 0) {
     obj.fizzMessage = "Buzz"

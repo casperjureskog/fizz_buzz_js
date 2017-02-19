@@ -26,6 +26,12 @@ describe("FIZZCalculator", function() {
     expect(subject.fizzMessage).toEqual("FizzBuzz");
   });
 
+  it("test for 15 = FizzBuzz for player1", function() {
+    subject = new Player({player1: 15});
+    calculator.fizz_buzz(subject);
+    expect(subject.level).toEqual(15);
+  });
+
   it("test for numbers lower and equal 0", function() {
     subject = new Player({player1: 0});
     calculator.fizz_buzz(subject);
